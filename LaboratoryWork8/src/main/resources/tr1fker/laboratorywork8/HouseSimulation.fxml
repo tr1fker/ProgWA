@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane fx:id="rootPane" prefHeight="355.0" prefWidth="273.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="tr1fker.laboratorywork8.HouseSimulationController">
+    <!-- Дом -->
+    <Rectangle fill="#ffff87" height="150" layoutX="-111.0" layoutY="-10.0" width="200" x="150" y="150" />
+
+    <!-- Труба -->
+    <Rectangle fx:id="window" fill="#686868" height="60" layoutX="-50.0" layoutY="-21.0" width="20" x="240" y="80" />
+
+    <!-- Кнопка "Старт" -->
+    <Button fx:id="startButton" layoutX="110.0" layoutY="305.0" text="Старт" />
+   <Polygon fill="#97610b" layoutX="140.0" layoutY="103.0" points="-101.0, 37.0, 99.0, 37.0, -2.0, -85.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fill="#654502" height="109.0" layoutX="-99.0" layoutY="31.0" width="58.0" x="150" y="150" />
+   <Rectangle fill="#3b3320" height="60.0" layoutX="-32.0" layoutY="46.0" width="106.0" x="150" y="150" />
+   <Rectangle fx:id="window" fill="#1d706d" height="40.0" layoutX="-23.0" layoutY="56.0" width="88.0" x="150" y="150" />
+</Pane>
