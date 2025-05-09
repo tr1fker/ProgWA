@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/22"
+      fx:controller="tr1fker.laboratorywork7.ViewController"
+      spacing="15" alignment="TOP_CENTER"
+      prefWidth="800" prefHeight="600">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Заголовок -->
+    <Label text="Архив книг">
+        <font>
+            <Font name="System Bold" size="28"/>
+        </font>
+    </Label>
+
+    <!-- Таблица -->
+    <TableView fx:id="bookTable" prefHeight="400" prefWidth="760">
+        <columns>
+            <TableColumn fx:id="titleColumn" text="Название" prefWidth="200"/>
+            <TableColumn fx:id="authorColumn" text="Автор" prefWidth="200"/>
+            <TableColumn fx:id="yearColumn" text="Год" prefWidth="100"/>
+            <TableColumn fx:id="genreColumn" text="Жанр" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+    <!-- Кнопки -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="addButton" text="Добавить" onAction="#handleAddBook" prefWidth="100"/>
+        <Button fx:id="editButton" text="Редактировать" onAction="#handleEditBook" prefWidth="100"/>
+        <Button fx:id="deleteButton" text="Удалить" onAction="#handleDeleteBook" prefWidth="100"/>
+    </HBox>
+</VBox>
